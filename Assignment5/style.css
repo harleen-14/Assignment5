@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+/* html */
+html{
+    scroll-behavior: smooth;
+}
+h1{
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 2px;
+    text-shadow: 3px 0px 2px rgb(0, 0, 0);
+}
+
+/* navbar */
+nav{
+    box-shadow: 0px 1px 13px -2px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 1px 13px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 1px 13px -2px rgba(0,0,0,0.75);
+}
+.navbar-brand{
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 1.5px;
+}
+nav li a{
+    font-weight: 500;
+}
+.nav-item{
+    position: relative;
+    color: #2a9d8f; 
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  .nav-item::before{
+    content: '';
+    position: absolute;
+    left :35%;
+    top: 85%;
+    width: 0;
+    height: 3px;
+    background-color: #2a9d8f;
+    transition: all 0.5s linear;
+  
+  }
+  .nav-item:hover::before{
+    width: 75%;
+  }
+  .nav-item .active{
+      color: #2a9d8f;
+  }
+
+  @media screen and (max-width:870px) {
+    .nav-item{
+        position: relative;
+        color: #2a9d8f; 
+        font-family: 'Josefin Sans', sans-serif;
+      }
+      .nav-item::before{
+        content: '';
+        position: absolute;
+        left :8%;
+        top: 85%;
+        width: 0;
+        height: 3px;
+        background-color: #2a9d8f;
+        transition: all 0.5s linear;
+      
+      }
+      .nav-item:hover::before{
+        width: 16%;
+      }
+}
+/* home section */
+#home{
+    background-image: url(https://wallpaperaccess.com/full/5651988.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: auto;
+}
+
+
+#home img{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+@media screen and (max-width:870px) {
+    #home img{
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        border: 1px solid black;
+    }
+}
+
+#home h2{
+    font-family: 'Playfair Display', serif;
+    text-shadow: 4px 4px 2px rgb(0, 0, 0);
+}
+#home h4{
+    font-family: 'Playfair Display', serif;
+    text-shadow: 4px 4px 2px rgb(0, 0, 0);
+}
+/* about section */
+
+.aboutme{
+    height: auto;
+    width: auto;
+}
+
+.aboutme_icon{
+    padding-top: 30px;
+    color: white;
+}
+.main_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/* .interests{
+    display: flex;
+    flex-direction: column;
+} */
+.interests ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    text-decoration: none;
+    justify-content: space-around;
+}
+.interests li{
+    padding: 5px;
+}
+.interests p{
+    padding: 15px;
+    text-align: center;
+    background-color: grey;
+    height: 90px;
+    width: 90px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 1px 13px -2px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 1px 13px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 1px 13px -2px rgba(0,0,0,0.75);
+}
+.interests p:hover{
+    background-color: #2a9d8f;
+    transform: translateY(-3px);
+    
+}
+@media screen and (max-width:870px) {
+    .main_div{
+       
+        flex-direction: column;
+        
+    }
+}
+
+
+/* skills css */
+
+.skills{
+    width: auto;
+    height: auto;
+    background-color: #404040;
+}
+.skills_main{
+    display: flex;
+    font-weight: bold;
+}
+.skills_main li{
+    margin-top: 20px;
+    margin-left: 7px;
+}
+.skills_icon{
+    padding-top: 30px;
+    color: white;
+}
+.skills ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+.progress-bar{
+    background-color: #2a9d8f;
+}
+@media screen and (max-width:870px) {
+    .skills_main{
+       
+        flex-direction: column;  
+    }
+    .skills_main{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .progress{
+        width: 180%;
+    }
+    .skills_main h1{
+        margin-left: 62%;
+        
+    }
+}
+
+/* contact form */
+
+.contact_icon{
+    padding-top: 30px;
+    color: white;
+}
+
+/* /footer css/ */
+.page-footer{
+    background-color: #404040;
+    height: auto;
+}
+.foot{
+    text-decoration: none;
+
+}
+footer a:hover{
+    color: #2a9d8f;
+}
